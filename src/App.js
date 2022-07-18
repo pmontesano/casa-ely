@@ -5,15 +5,18 @@ import Navbar from './components/Navbar';
 import Title from './components/Title';
 import './App.css';
 
+const imgPath =
+  'https://raw.githubusercontent.com/pmontesano/casa-ely/gh-pages/public/img';
+
 class App extends Component {
   state = {
     productos: [
-      { name: 'Producto 1', price: 1500, img: '/img/1.jpeg' },
-      { name: 'Producto 2', price: 2500, img: '/img/2.jpeg' },
-      { name: 'Producto 3', price: 500, img: '/img/3.jpeg' },
-      { name: 'Producto 4', price: 1500, img: '/img/4.jpeg' },
-      { name: 'Producto 5', price: 2500, img: '/img/5.jpeg' },
-      { name: 'Producto 6', price: 500, img: '/img/6.jpeg' },
+      { name: 'Producto 1', price: 1500, img: `${imgPath}/1.jpeg` },
+      { name: 'Producto 2', price: 2500, img: `${imgPath}/2.jpeg` },
+      { name: 'Producto 3', price: 500, img: `${imgPath}/3.jpeg` },
+      { name: 'Producto 4', price: 1500, img: `${imgPath}/4.jpeg` },
+      { name: 'Producto 5', price: 2500, img: `${imgPath}/5.jpeg` },
+      { name: 'Producto 6', price: 500, img: `${imgPath}/6.jpeg` },
     ],
     carro: [],
     esCarroVisible: false,
